@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.MenuButton?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="479.0" prefWidth="239.0" style="-fx-background-color: #2a3950;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.AddCommandController">
+   <children>
+      <TextField fx:id="coordinatesXField" alignment="CENTER" layoutX="34.0" layoutY="106.0" prefHeight="29.0" prefWidth="169.0" style="-fx-background-color: #2a3950; -fx-border-color: #00e0c6; -fx-border-radius: 15; -fx-text-inner-color: #ffffff;" />
+      <TextField fx:id="salaryField" alignment="CENTER" layoutX="34.0" layoutY="67.0" style="-fx-background-color: #2a3950; -fx-border-color: #00e0c6; -fx-border-radius: 15; -fx-text-inner-color: #ffffff;" />
+      <TextField fx:id="coordinatesYField" alignment="CENTER" layoutX="34.0" layoutY="145.0" prefWidth="169.0" style="-fx-background-color: #2a3950; -fx-border-color: #00e0c6; -fx-border-radius: 15; -fx-text-inner-color: #ffffff;" />
+      <TextField fx:id="employeesCountField" alignment="CENTER" layoutX="34.0" layoutY="340.0" style="-fx-background-color: #2a3950; -fx-border-color: #00e0c6; -fx-border-radius: 15; -fx-text-inner-color: #ffffff;" />
+      <Button fx:id="addButton" layoutX="35.0" layoutY="415.0" mnemonicParsing="false" prefHeight="29.0" prefWidth="169.0" style="-fx-background-color: #00e0c6; -fx-background-radius: 30;" textFill="#2a3950">
+         <font>
+            <Font name="Heiti TC Light" size="13.0" />
+         </font>
+      </Button>
+      <TextField fx:id="nameField" alignment="CENTER" layoutX="34.0" layoutY="28.0" prefHeight="29.0" prefWidth="169.0" style="-fx-background-color: #2a3950; -fx-border-color: #00e0c6; -fx-border-radius: 15; -fx-text-inner-color: #ffffff;" />
+      <MenuButton fx:id="positionMenu" alignment="CENTER" contentDisplay="CENTER" layoutX="34.0" layoutY="263.0" mnemonicParsing="false" prefHeight="29.0" prefWidth="169.0" style="-fx-background-color: #2a3950; -fx-border-color: #00e0c6; -fx-border-radius: 15;" textFill="#b2b2b2">
+        <items>
+          <MenuItem fx:id="laborerButton" mnemonicParsing="false" onAction="#btnLaborer" />
+          <MenuItem fx:id="engineerButton" mnemonicParsing="false" onAction="#btnEngineer" />
+            <MenuItem fx:id="headOfDepartmentButton" mnemonicParsing="false" onAction="#btnHeadOfDep" />
+            <MenuItem fx:id="developerButton" mnemonicParsing="false" onAction="#btnDeveloper" />
+            <MenuItem fx:id="bakerButton" mnemonicParsing="false" onAction="#btnBaker" />
+        </items>
+      </MenuButton>
+      <MenuButton fx:id="organizationTypeMenu" alignment="CENTER" contentDisplay="CENTER" layoutX="34.0" layoutY="301.0" mnemonicParsing="false" prefHeight="29.0" prefWidth="169.0" style="-fx-background-color: #2a3950; -fx-border-color: #00e0c6; -fx-border-radius: 15;" textFill="#b2b2b2">
+         <items>
+            <MenuItem fx:id="commercialButton" mnemonicParsing="false" onAction="#btnCommercial" />
+            <MenuItem fx:id="privateLimComButton" mnemonicParsing="false" onAction="#btnPrivateLimCom" />
+            <MenuItem fx:id="openJointStockComButton" mnemonicParsing="false" onAction="#btnOpenJointStockCom" />
+         </items>
+      </MenuButton>
+      <DatePicker fx:id="startDatePicker" layoutX="34.0" layoutY="181.0" prefHeight="29.0" prefWidth="166.0" style="-fx-control-inner-background: #2a3950; -fx-border-color: #00e0c6; -fx-border-radius: 15; -fx-text-inner-color: #ffffff; -fx-text-promt-color: #ffffff; -fx-background-insets: 500;" />
+      <DatePicker fx:id="endDatePicker" layoutX="34.0" layoutY="223.0" prefHeight="29.0" prefWidth="169.0" style="-fx-control-inner-background: #2a3950; -fx-border-color: #00e0c6; -fx-border-radius: 15; -fx-background-insets: 500; -fx-text-inner-color: #ffffff;" />
+      <TextField fx:id="errorField" alignment="CENTER" layoutX="15.0" layoutY="378.0" prefHeight="27.0" prefWidth="204.0" style="-fx-background-color: #2a3950; -fx-text-inner-color: #ffffff;" />
+   </children>
+</AnchorPane>
